@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Austin Wargo — Unity and C# game programmer portfolio featuring Guild of Ashes gameplay systems.">
+  <title>Austin Wargo · Game Programmer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23130e18'/%3E%3Cpath d='M32 8 48 17v18c0 11-7 18-16 22-9-4-16-11-16-22V17z' fill='%237f3f68' stroke='%23f0d477' stroke-width='3'/%3E%3Cpath d='m23 32 6 6 13-15' fill='none' stroke='%23f0d477' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Austin Wargo, home">
+      <span class="brand-mark">AW</span>
+      <span>Austin Wargo</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#systems">Systems</a>
+      <a href="#background">Background</a>
+      <a class="nav-contact" href="mailto:austintwargo0518@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Game Programmer · Unity · C#</p>
+        <h1 id="hero-title">I build game systems that connect, persist, and hold up under play.</h1>
+        <p class="hero-lede">I’m Austin Wargo, a gameplay and systems programmer working on <em>Guild of Ashes</em>, a guild-management RPG with turn-based combat, persistent heroes, equipment progression, rival guilds, and a reactive quest world.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View project case study</a>
+          <a class="button secondary" href="mailto:austintwargo0518@gmail.com">Email Austin</a>
+        </div>
+        <ul class="quick-facts" aria-label="Key qualifications">
+          <li><strong>Unity</strong><span>Gameplay & UI implementation</span></li>
+          <li><strong>C#</strong><span>Interconnected systems</span></li>
+          <li><strong>Cybersecurity</strong><span>Degree nearly complete</span></li>
+        </ul>
+      </div>
+      <figure class="hero-frame">
+        <img src="assets/forge-preview.png" alt="Guild of Ashes forge preview showing a Warrior's Helm upgrade with material properties and stat changes">
+        <figcaption><span>Guild of Ashes</span> Forge system in-game</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-study" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Featured project</p>
+        <h2 id="work-title">Guild of Ashes</h2>
+        <p>A collaborative Unity RPG about rebuilding a fallen adventuring guild while managing heroes, contracts, equipment, time, and rival factions.</p>
+      </div>
+
+      <div class="project-summary">
+        <article>
+          <span class="number">01</span>
+          <h3>My focus</h3>
+          <p>Gameplay programming, system integration, UI behavior, debugging, balance testing, and turning design ideas into testable loops.</p>
+        </article>
+        <article>
+          <span class="number">02</span>
+          <h3>Design challenge</h3>
+          <p>Make equipment, combat, quests, progression, and guild management affect one another without breaking watched or simulated play.</p>
+        </article>
+        <article>
+          <span class="number">03</span>
+          <h3>Current direction</h3>
+          <p>Ordered campaign quests, rival-guild competition, reputation consequences, and branching advancement outcomes.</p>
+        </article>
+      </div>
+
+      <div class="gallery" aria-label="Guild of Ashes screenshots">
+        <button class="gallery-card wide" data-image="assets/forge-preview.png" data-alt="Forge interface previewing a Warrior's Helm upgrade">
+          <img src="assets/forge-preview.png" alt="Forge interface previewing a Warrior's Helm upgrade">
+          <span><b>Forge preview</b> Materials, compatibility, stability, durability, and effect changes</span>
+        </button>
+        <button class="gallery-card" data-image="assets/equipment-detail.png" data-alt="Equipment detail window for Warrior's Helm">
+          <img src="assets/equipment-detail.png" alt="Equipment detail window for Warrior's Helm">
+          <span><b>Equipment lifecycle</b> Condition, upgrades, repair, sale, and salvage</span>
+        </button>
+        <button class="gallery-card" data-image="assets/hero-management.png" data-alt="Level-one Knight shown in the hero management interface">
+          <img src="assets/hero-management.png" alt="Level-one Knight shown in the hero management interface">
+          <span><b>Hero management</b> Stats, roster decisions, equipment, training, and progression</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="systems" id="systems" aria-labelledby="systems-title">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Selected contributions</p>
+          <h2 id="systems-title">Systems built to work together</h2>
+        </div>
+        <p>Choose a system to see the design problem, implementation, and player-facing result.</p>
+      </div>
+
+      <div class="systems-layout">
+        <div class="system-tabs" role="tablist" aria-label="Project systems">
+          <button role="tab" aria-selected="true" data-system="forge">Shop & Forge</button>
+          <button role="tab" aria-selected="false" data-system="durability">Durability</button>
+          <button role="tab" aria-selected="false" data-system="combat">Combat Defense</button>
+          <button role="tab" aria-selected="false" data-system="quests">Quest Progression</button>
+          <button role="tab" aria-selected="false" data-system="guilds">Rival Guilds</button>
+        </div>
+        <article class="system-detail" aria-live="polite">
+          <p class="system-kicker" id="system-kicker">Economy & progression</p>
+          <h3 id="system-title">Shop and blacksmith forge</h3>
+          <p id="system-description">Built the equipment economy around buying, selling, repairing, salvaging, upgrading, and forging. Material compatibility, forging power, stability, fees, durability changes, and stat previews are resolved before the player commits.</p>
+          <ul id="system-points">
+            <li>Up to three selected forging materials</li>
+            <li>Previewed before-and-after durability and effects</li>
+            <li>Shared inventory updates across shop and blacksmith UI</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="code-section" id="code" aria-labelledby="code-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected C# implementation</p>
+        <h2 id="code-title">See how each system works inside the code</h2>
+        <p>These focused excerpts show the rules behind the player-facing systems. Choose a system to inspect the implementation and the reason behind it.</p>
+      </div>
+      <div class="code-tabs" role="tablist" aria-label="Code examples">
+        <button role="tab" aria-selected="true" data-code="forge">Forge</button>
+        <button role="tab" aria-selected="false" data-code="durability">Durability</button>
+        <button role="tab" aria-selected="false" data-code="combat">Combat Defense</button>
+        <button role="tab" aria-selected="false" data-code="quests">Story Quests</button>
+        <button role="tab" aria-selected="false" data-code="guilds">Rival Guilds</button>
+      </div>
+      <div class="code-grid">
+        <div class="code-window">
+          <div class="code-window-header">
+            <span id="code-file">ItemManager.cs</span>
+            <span>C# · Unity</span>
+          </div>
+          <pre><code id="code-sample"></code></pre>
+        </div>
+        <div class="code-notes">
+          <div><b id="code-note-title">Preview before committing</b><span id="code-note-body">The forge validates item compatibility and calculates the exact result before materials or gold are spent.</span></div>
+          <div><b>Why it matters</b><span id="code-impact">Players can understand the outcome of a permanent equipment decision before confirming it.</span></div>
+          <div><b>Status</b><span id="code-status">Implemented and play-tested</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="background" id="background" aria-labelledby="background-title">
+      <div class="section-heading">
+        <p class="eyebrow">Additional value</p>
+        <h2 id="background-title">Programming with a security mindset</h2>
+      </div>
+      <div class="background-grid">
+        <p>I’m nearing completion of a cybersecurity degree. That training strengthens how I think about validation, data handling, authorization boundaries, failure states, and abuse-resistant system design—especially useful for save systems, accounts, multiplayer features, and online services.</p>
+        <div class="credential-card">
+          <span>Academic documentation</span>
+          <strong>Transcript available upon request</strong>
+          <p>Coursework can be shared directly during the application process.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Let’s build something</p>
+      <h2 id="contact-title">Available for game programming opportunities.</h2>
+      <p>Gameplay systems, UI, tools, debugging, and secure development practices.</p>
+      <div class="contact-links">
+        <a href="mailto:austintwargo0518@gmail.com">austintwargo0518@gmail.com</a>
+        <span>Discord: @wargo5766</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Austin Wargo</span>
+    <span>Game Programmer · Unity · C#</span>
+  </footer>
+
+  <dialog id="image-dialog">
+    <button class="dialog-close" aria-label="Close image preview">Close</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
